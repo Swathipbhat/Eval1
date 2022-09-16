@@ -1,0 +1,29 @@
+<!DOCTYPE details [
+<!ELEMENT info ( ( personr | student)+)>
+<!ELEMENT personr (name,title)>
+<!ELEMENT student (name, email, mobileno)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST studentr email CDATA #REQUIRED>
+<!ELEMENT mobileno (#PCDATA)>
+<!ATTLIST studentr mobile CDATA #REQUIRED>
+<!ELEMENT customer-city (#PCDATA)>
+]>
+<details>
+<personr id="A-401">
+<name> Downtown </name>
+<title> Stony Brook University of Graduate and Health Sciences Admissions </title>
+</personr>
+<student student-id="C100">
+<name>Joe</name>
+<email>Monroe@gmail.com</email>
+<mobile>921057332</mobile>
+</student>
+<student student-id="C100">
+<name>Doe</name>
+<email>nonroe@gmail.com</email>
+<mobile>921057332</mobile>
+</student>
+</details>
